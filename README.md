@@ -2,11 +2,11 @@
 
 Minimalist version of [R-Type](https://en.wikipedia.org/wiki/R-Type) written in Assembly. In this version, the object of the game is simply to survive for as long as possible while collecting as many points as possible. The game ends when the spacecraft collides with either an asteroid, `*`, or a black hole, `O`. Points are awarded for destroying asteroids. A single laser beam destroys an asteroid, but will also evaporate when the two collide. Black holes absorb all laser beams they come across and therefore cannot be destroyed. Maneuver your spacecraft accordingly!
 
-GAMEPLAY VIDEO HERE
+https://github.com/user-attachments/assets/f1b04776-744d-4222-a3c1-b530c06138b1
 
 ## Description
 
-The games is written in P3 Assembly. P3 is a 16-bit CPU used in my Introduction to Computer Architecture course, which comes in a board with a handful of integrated components. The 7 segment display is used to show the accumulated points (# of destroyed asteroids), the LEDs change configuration when an asteroid is destroyed (the same seemingly random values used to generate asteroid and black hole spawn coordinates are reused and fed to the LEDs, producing seemingly random configurations), and the following buttons enable gameplay:
+The games is written in P3 Assembly. P3 is a 16-bit CPU used in my Introduction to Computer Architecture course, which comes in a board (based on [DIO5](https://digilent.com/reference/_media/dio5/dio5_rm.pdf)) with a handful of integrated components. The 7 segment display is used to show the accumulated points (# of destroyed asteroids), the LEDs change configuration when an asteroid is destroyed (the same seemingly random values used to generate asteroid and black hole spawn coordinates are reused and fed to the LEDs, producing seemingly random configurations), and the following buttons enable gameplay:
 
 `IE` (re)starts the game.
 `I0`, `I1`, `I2` and `I3` move the spacecraft *down*, *up*, *left* and *right*, respectively.
@@ -26,16 +26,14 @@ Assemble the game
 ```
 ./p3as xs_r_type.as
 ```
-(This repository is already populated with the compilation's output.) 
-
 Then, run the graphical simulator
 ```
 java -jar p3sim.jar
 ```
 
-Once in the simulator, import the assembled executable (`Ficheiro` -> `Carrega Programa` -> select `.exe`), click `Run` (`Corre`), and open the `board` and `terminal` windows (`Ver` -> `Janela Texto` and `Ver` -> `Janela Placa`). A small video demo of the process:
+Once in the simulator, import the assembled executable (`Ficheiro` -> `Carrega Programa` -> select the `.exe`), click `Run` (`Corre`), and open the `board` and `terminal` windows (`Ver` -> `Janela Texto` and `Ver` -> `Janela Placa`). A small video demo of the process:
 
-DEMO VIDEO HERE
+https://github.com/user-attachments/assets/ae5cb308-aa7a-4096-af72-93fdd8c63e04
 
 ## Authors
 
