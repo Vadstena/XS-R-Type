@@ -2,7 +2,7 @@
 
 Minimalist version of [R-Type](https://en.wikipedia.org/wiki/R-Type) written in Assembly. In this version, the object of the game is simply to survive for as long as possible while collecting as many points as possible. The game ends when the spacecraft collides with either an asteroid, `*`, or a black hole, `O`. Points are awarded for destroying asteroids. A single laser beam destroys an asteroid, but will also evaporate when the two collide. Black holes absorb all laser beams they come across and therefore cannot be destroyed. Maneuver your spacecraft accordingly!
 
-https://github.com/user-attachments/assets/f1b04776-744d-4222-a3c1-b530c06138b1
+https://github.com/user-attachments/assets/bf93cef9-15fb-4fac-9a31-8360bab34538
 
 ## Description
 
